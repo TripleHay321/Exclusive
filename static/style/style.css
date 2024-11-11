@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+section.home {
+    padding: 0% 10%;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1%;
+    font-size: small;
+}
+
+ header select{
+    background: #000;
+    color: #fff;
+    border: none;
+}
+
+section.home nav {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+section.home nav p {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+section.home nav ul {
+    width: fit-content;
+    display: flex;
+    gap: 15%;
+}
+
+section.home nav li a {
+    color: #000;
+    border-bottom: 2px solid transparent;
+    margin-left: 1%;
+    font-weight: bold;
+    font-size: 1em;
+    transition: border 0.5s ease-in-out;
+}
+
+section.home nav li a:hover,
+section.home nav li a:focus{
+    border-bottom-color: #d3d3d3;
+}
+
+form.search {
+    display: flex;
+}
+
+form.search input{
+    padding: 2% 10%;
+    background: #F5F5F5;
+    border-radius: 5px;
+    border: none;
+}
+
+form.search button {
+    background: none;
+    background: none;
+    border: none;
+    margin: 2%  0% 0% -15%;
+}
+
+section.home .hero .row .cartegory {
+    border-right: 2px solid #d3d3d3;
+    padding: 5% 0% 0%  0%;
+}
+
+section.home .hero .row .cartegory ul li {
+    margin-top: 10%;
+    font-weight: 300;
+}
+
+section.home .hero .row  .hero-group {
+    padding: 5% 0% 0% 5%;
+}
+
+section.home .hero .row  .hero-group .hero_end {
+    padding: 5% 0% 0% 5%;
+}
+
+section.home .hero .row  .hero-group .hero_end p {
+    font-size: 2.8em;
+    margin: 20% 0% 20% 0%;
+}
+
+section.home .hero .row  .hero-group .hero_end a {
+    font-size: 1em;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: border 0.5s ease-in-out;
+}
+section.home .hero .row  .hero-group .hero_end a:hover,
+section.home .hero .row  .hero-group .hero_end a:focus {
+    border-bottom-color: #fff;
+}
+
+section.home main {
+    padding-top: 10%;
+}
+
+section.home main .todays {
+    display: flex;
+}
+
+section.home main .todays p {
+    margin: 0.5% 0% 0% 1%;
+    color: #DB4444;
+    font-weight: bold;
+}
+
+section.home main .today {
+    display: flex;
+    gap: 10%;
+    margin-top: 2%;
+}
+
+section.home main .today p {
+    font-size: 2em;
+    font-weight: bold;
+}

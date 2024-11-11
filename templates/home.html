@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+
+{% block head %}
+    <title>Home</title>
+{% endblock %}
+
+{% block body %}
+    <header>
+        <div style="display: inline-flex;">
+            <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+            <a href="{{ url_for('home' ) }}" style="padding-left: 0.5em; text-decoration: underline; color: #fff;">ShopNow</a>
+        </div>
+
+        <select name="language" id="lang">
+            <option value="English" active>English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Italian">Italian</option>
+            <option value="Arabic">Arabic</option>
+        </select>
+    </header>
+    <section class="home">
+        <nav>
+            <p>Exclusive</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">SignUp</a></li>
+            </ul>
+            <div style="display: flex; gap: 10%;">
+                <form action="/login" class="search">
+                    {{ form.hidden_tag() }}
+
+                    {{ form.search }} <br>
+                    
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                        <path fill="#000" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14" />
+                    </svg>
+                </button><br>
+                </form>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                        <path fill="#000" d="m12 21l-1.45-1.3q-2.525-2.275-4.175-3.925T3.75 12.812T2.388 10.4T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.3 0 2.475.55T12 4.75q.85-1 2.025-1.55t2.475-.55q2.35 0 3.925 1.575T22 8.15q0 1.15-.387 2.25t-1.363 2.412t-2.625 2.963T13.45 19.7zm0-2.7q2.4-2.15 3.95-3.687t2.45-2.675t1.25-2.026T20 8.15q0-1.5-1-2.5t-2.5-1q-1.175 0-2.175.662T12.95 7h-1.9q-.375-1.025-1.375-1.687T7.5 4.65q-1.5 0-2.5 1t-1 2.5q0 .875.35 1.763t1.25 2.025t2.45 2.675T12 18.3m0-6.825" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                        <path fill="#000" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="row">
+                <div class="col-1 cartegory">
+                    <ul>
+                        <li style="margin-top: 0%;"><a href="#">Woman's Fashion <span>></span></a></li>
+                        <li><a href="#">Men's Fashion <span>></span></a></li>
+                        <li><a href="#">Electronics </a></li>
+                        <li><a href="#">Home & Lifestyle</a></li>
+                        <li><a href="#">Medicine </a></li>
+                        <li><a href="#">Sports & Outdoor </a></li>
+                        <li><a href="#">Baby's & Toys</a></li>
+                        <li><a href="#">Groceries & Pets </a></li>
+                        <li><a href="#">Health & Beauty </a></li>
+                    </ul>
+                </div>
+                <div class="col-3 hero-group">
+                    <div style="color: #fff; background: #000;" class="hero_end">
+                        <div class="row">
+                            <div class="col-1">
+                                <img src="{{ url_for('static', filename='./style/IMG/Home/Frame563.png') }}" alt="" id="">
+                                <p>Up to 10% off Voucher</p>
+                                <a 
+                                href="#">Shop Now 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.78em" height="1em" viewBox="0 0 16 9">
+                                    <path fill="white" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5" />
+                                    <path fill="white" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z" />
+                                </svg>
+                                </a>
+                            </div>
+                            <div class="col-1">
+                                <img src="{{ url_for('static', filename='./style/IMG/Home/hero_endframe__cvklg0xk3w6e_large 2.png') }}" alt="" id="logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="todays">
+                <div style="height: 30px; width: 20px; background: #DB4444; border-radius: 5px;"></div>
+                <p>Today's</p>
+            </div>
+            <div class="today">
+                <p>Flash Sales</p>
+                <p>03 <span style="color: #DB4444;">:</span> 23 <span style="color: #DB4444;">:</span> 19 <span style="color: #DB4444;">:</span> 56</p>
+            </div>
+        </main>
+    </section>
+{% endblock %}

@@ -1,0 +1,33 @@
+a {
+    text-decoration:  none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .col-1 {
+    flex: 1;
+}
+
+.row .col-2 {
+    flex: 2;
+}
+
+.row .col-3 {
+    flex: 3;
+}
+
+.row .col-4 {
+    flex: 4;
+}
+
+.row .col-5 {
+    flex: 5;
+}
